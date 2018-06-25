@@ -25,11 +25,11 @@ public:
 		nLifeValue = l;
 		name = name_;
 	}
-	void Hurted(int nPower)
+	void Hurted(int nPow)
 	{
 		//．．．．表现受伤动作的代码
 		cout << name << "受伤害" << endl;
-		nLifeValue -= nPower;
+		nLifeValue -= nPow;
 	}
 	void Attack(CCreature * pobj)
 	{
@@ -64,7 +64,6 @@ public:
 	//幽灵特有的属性和方法
 
 };
-
 int main()
 {
 	CDragon oDragon;
@@ -82,5 +81,6 @@ int main()
 	oDragon.display();
 	oWolf.display();
 	oGhost.display();
-    return 0;
+	return 0;
 }
+
